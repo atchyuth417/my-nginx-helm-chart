@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: 46.30.14.110:30002/demo/nginx
+  pullPolicy: IfNotPresent
+  tag: latest
+
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30081
